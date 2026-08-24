@@ -412,7 +412,7 @@
           ctx.drawImage(img, 0, 0);
       }
       currentFrame = (currentFrame + 1) % frameCount;
-      setTimeout(() => requestAnimationFrame(draw), 1000/24); // 24 FPS for cinematic look
+      setTimeout(() => requestAnimationFrame(draw), 1000/35); // 35 FPS for a smoother and slightly faster look
     }
     draw();
   })();
