@@ -389,30 +389,28 @@
   (function(){
     const canvas = document.getElementById('anim-canvas');
     const ctx = canvas.getContext('2d');
-    const frameCount = 240; // 0 to 239
+    const frameCount = 240; 
     
     canvas.width = 1920;
     canvas.height = 1080;
     
-    const images = [];
-    for(let i=0; i<frameCount; i++) {
-        let img = new Image();
-        img.src = 'سس/frame_' + String(i).padStart(6, '0') + '.png';
-        images.push(img);
-    }
-    
     let currentFrame = 0;
+    let nextImg = new Image();
+    nextImg.src = 'سس/frame_000000.png';
+    
     function draw() {
-      let img = images[currentFrame];
-      if (img.complete && img.naturalWidth > 0) {
-          if(canvas.width !== img.naturalWidth) {
-            canvas.width = img.naturalWidth;
-            canvas.height = img.naturalHeight;
+      if (nextImg.complete && nextImg.naturalWidth > 0) {
+          if(canvas.width !== nextImg.naturalWidth) {
+            canvas.width = nextImg.naturalWidth;
+            canvas.height = nextImg.naturalHeight;
           }
-          ctx.drawImage(img, 0, 0);
+          ctx.drawImage(nextImg, 0, 0);
+          
+          currentFrame = (currentFrame + 1) % frameCount;
+          nextImg = new Image(); // Prevents RAM explosion
+          nextImg.src = 'سس/frame_' + String(currentFrame).padStart(6, '0') + '.png';
       }
-      currentFrame = (currentFrame + 1) % frameCount;
-      setTimeout(() => requestAnimationFrame(draw), 1000/35); // 35 FPS for a smoother and slightly faster look
+      setTimeout(() => requestAnimationFrame(draw), 1000/35); 
     }
     draw();
   })();
