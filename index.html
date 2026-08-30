@@ -183,7 +183,7 @@
 <div class="page">
 
   <div class="navbar">
-    <div class="nav-tag"><b>29</b> من الشهر · مقاعد محدودة</div>
+    <div class="nav-tag"><b>10/9</b> · مقاعد محدودة</div>
     <div class="nav-logo">
       <img src="mega_logo.png" alt="MEGA team" style="width: 120px; height: 52px; object-fit: cover; object-position: center;">
     </div>
@@ -194,7 +194,7 @@
     <h1>مؤتمر <em>MEGA</em> الاستثماري<br>مستقبل التداول وريادة الأعمال</h1>
     <p>أنت على بُعد خطوة واحدة من الانضمام لأضخم تجمّع استثماري يجمع الفوركس، بناء الثروة، وريادة الأعمال تحت سقف واحد. عبّئ الاستمارة أدناه لتأكيد حضورك وتخصيص تجربتك.</p>
     <div class="meta-row">
-      <div class="meta-chip">📅 <b>29</b> من الشهر الحالي</div>
+      <div class="meta-chip">📅 <b>10/9</b></div>
       <div class="meta-chip">🎟️ المقاعد محدودة</div>
       <div class="meta-chip">⏱️ دقيقتين للتسجيل</div>
     </div>
@@ -209,95 +209,119 @@
   </div>
 
   <div class="wrap">
-    <form id="megaForm">
-
+        <form id="megaForm">
+      <!-- Section 1 -->
       <div class="section-card">
         <div class="section-head">
           <div class="section-num"><svg viewBox="0 0 24 24" fill="none" stroke="#00D2A0" stroke-width="2"><path d="M12 12a4 4 0 100-8 4 4 0 000 8zM4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg></div>
-          <div><h2>البيانات الشخصية</h2><p>لتتمكن فرقنا من التواصل معك وتأكيد مقعدك</p></div>
+          <div><h2>البيانات الأساسية والتعريفية</h2><p>الرجاء تعبئة بياناتك بدقة</p></div>
         </div>
         <div class="field">
           <label>الاسم الكامل <span class="req">*</span></label>
-          <input type="text" name="full_name" placeholder="مثال: أحمد محمد العلي" required>
+          <input type="text" name="full_name" placeholder="مثال: أحمد محمد" required>
         </div>
         <div class="field">
-          <label>رقم الواتساب <span class="hint">(مع رمز الدولة)</span> <span class="req">*</span></label>
-          <input type="tel" name="whatsapp" placeholder="مثال: xxxxxxxx +972" required>
+          <label>رقم الواتساب / الهاتف <span class="req">*</span></label>
+          <input type="tel" name="whatsapp" placeholder="مثال: 05xxxxxxxxx" required>
         </div>
         <div class="field">
-          <label>البريد الإلكتروني</label>
-          <input type="email" name="email" placeholder="example@email.com">
-        </div>
-        <div class="field">
-          <label>المدينة / المحافظة <span class="req">*</span></label>
-          <input type="text" name="city" placeholder="مثال: جنين" required>
+          <label>الوضع المهني الحالي <span class="req">*</span></label>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="job_status" value="student" required><span>طالب / حديث تخرج</span></label>
+            <label class="choice"><input type="radio" name="job_status" value="employee"><span>موظف (دوام كامل / جزئي)</span></label>
+            <label class="choice"><input type="radio" name="job_status" value="business"><span>صاحب عمل / ريادي أعمال</span></label>
+            <label class="choice"><input type="radio" name="job_status" value="job_seeker"><span>باحث عن عمل</span></label>
+          </div>
         </div>
       </div>
 
+      <!-- Section 2 -->
       <div class="section-card">
         <div class="section-head">
           <div class="section-num"><svg viewBox="0 0 24 24" fill="none" stroke="#00D2A0" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg></div>
-          <div><h2>مستوى الخبرة والاهتمام</h2><p>نساعدك على تخصيص محتوى الجلسات لمستواك</p></div>
+          <div><h2>مجال الاهتمام والخبرة</h2><p>لنحدد مسارك الصحيح</p></div>
         </div>
-
         <div class="field">
-          <label>ما هو مجال اهتمامك الرئيسي؟ <span class="hint">(يمكن اختيار أكثر من خيار)</span></label>
+          <label>1. شو أكتر مجال بيهمك تركز عليه في الوقت الحالي؟ <span class="hint" style="display:block; margin-top:5px;">(يمكن اختيار أكثر من خيار)</span></label>
           <div class="choice-grid">
-            <label class="choice"><input type="checkbox" name="interest[]" value="forex"><span>التداول في سوق الفوركس</span></label>
-            <label class="choice"><input type="checkbox" name="interest[]" value="portfolio"><span>الاستثمار طويل الأجل وبناء المحافظ</span></label>
-            <label class="choice"><input type="checkbox" name="interest[]" value="business"><span>ريادة الأعمال وتأسيس المشاريع</span></label>
-            <label class="choice"><input type="checkbox" name="interest[]" value="join_team"><span>التعرف على فرص الانضمام لفريق MEGA</span></label>
+            <label class="choice"><input type="checkbox" name="interest[]" value="startup"><span>ريادة الأعمال وتأسيس مشروع خاص</span></label>
+            <label class="choice"><input type="checkbox" name="interest[]" value="investment"><span>الاستثمار وبناء مصادر دخل إضافية</span></label>
+            <label class="choice"><input type="checkbox" name="interest[]" value="money_management"><span>تطوير مهارات إدارة الأموال والادخار</span></label>
+            <label class="choice"><input type="checkbox" name="interest[]" value="mega_team"><span>التعرف على فرص عمل أو شراكة مع فريق MEGA</span></label>
           </div>
         </div>
-
         <div class="field">
-          <label>كيف تقيّم خبرتك الحالية في التداول والاستثمار؟</label>
+          <label>2. كيف تقيّم خبرتك الحالية في عالم البزنس والاستثمار؟ <span class="req">*</span></label>
           <div class="choice-grid">
-            <label class="choice"><input type="radio" name="level" value="beginner"><span>مبتدئ تماماً — أبحث عن بداية صحيحة</span></label>
-            <label class="choice"><input type="radio" name="level" value="intermediate"><span>متوسط — لدي معرفة أو تجربة سابقة</span></label>
-            <label class="choice"><input type="radio" name="level" value="advanced"><span>متقدم — أبحث عن استراتيجيات أعمق</span></label>
-          </div>
-        </div>
-
-        <div class="field">
-          <label>أكبر عقبة تواجهك حالياً في تحقيق أهدافك المالية؟</label>
-          <div class="choice-grid">
-            <label class="choice"><input type="radio" name="obstacle" value="capital"><span>نقص رأس المال</span></label>
-            <label class="choice"><input type="radio" name="obstacle" value="knowledge"><span>نقص المعرفة والخبرة التطبيقية</span></label>
-            <label class="choice"><input type="radio" name="obstacle" value="mentor"><span>عدم وجود موجّه أو مجتمع داعم</span></label>
-            <label class="choice"><input type="radio" name="obstacle" value="risk"><span>إدارة المخاطر والخوف من الخسارة</span></label>
+            <label class="choice"><input type="radio" name="experience" value="beginner" required><span>مبتدئ تماماً (بدي أبلش من الصفر)</span></label>
+            <label class="choice"><input type="radio" name="experience" value="theory"><span>عندي معلومات نظرية بس ما بلشت تطبيق عملي</span></label>
+            <label class="choice"><input type="radio" name="experience" value="practical"><span>عندي تجربة عملية وبطمح للتطوير والتوسع</span></label>
           </div>
         </div>
       </div>
 
+      <!-- Section 3 -->
+      <div class="section-card">
+        <div class="section-head">
+          <div class="section-num"><svg viewBox="0 0 24 24" fill="none" stroke="#00D2A0" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><h2>التحديات والاحتياجات</h2><p>لنساعدك في تجاوز العقبات</p></div>
+        </div>
+        <div class="field">
+          <label>3. شو أكبر تحدي بيمنعك من تحقيق أهدافك المالية أو المهنية حالياً؟ <span class="req">*</span></label>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="challenge" value="capital" required><span>نقص رأس المال لبدء مشروع</span></label>
+            <label class="choice"><input type="radio" name="challenge" value="knowledge"><span>نقص المعرفة والخبرة العملية في إدارة الاموال</span></label>
+            <label class="choice"><input type="radio" name="challenge" value="time"><span>ضيق الوقت أو صعوبة تنظيم وقتي</span></label>
+            <label class="choice"><input type="radio" name="challenge" value="mentor"><span>عدم وجود موجّه (Mentor) أو مجتمع داعم</span></label>
+            <label class="choice"><input type="radio" name="challenge" value="fear"><span>الخوف من المخاطرة واتخاذ القرار</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label>4. شو أكتر شيء محتاجه حالياً لتنطلق في خطوتك الجاية؟ <span class="req">*</span></label>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="need" value="plan" required><span>خطة عمل واضحة ومجربة</span></label>
+            <label class="choice"><input type="radio" name="need" value="skills"><span>مهارات عملية جديدة (إدارة / مبيعات / تسويق)</span></label>
+            <label class="choice"><input type="radio" name="need" value="partner"><span>رأس مال أو شريك استثماري</span></label>
+            <label class="choice"><input type="radio" name="need" value="guidance"><span>توجيه ومتابعة شخصية من خبراء</span></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
       <div class="section-card">
         <div class="section-head">
           <div class="section-num"><svg viewBox="0 0 24 24" fill="none" stroke="#00D2A0" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
-          <div><h2>تأكيد الحضور</h2><p>الخطوة الأخيرة لحجز مقعدك</p></div>
+          <div><h2>توقعات المؤتمر وتأكيد الحضور</h2><p>خطوتك الأخيرة للبدء</p></div>
         </div>
-
         <div class="field">
-          <label>هل تؤكد حضورك في الموعد المحدد؟</label>
+          <label>5. شو الهدف الرئيسي يلي بتطمح تحققه من حضور المؤتمر؟ <span class="req">*</span></label>
           <div class="choice-grid">
-            <label class="choice"><input type="radio" name="confirm" value="yes"><span>نعم، أؤكد حضوري تماماً</span></label>
-            <label class="choice"><input type="radio" name="confirm" value="maybe"><span>مهتم، أود معرفة التفاصيل أولاً</span></label>
+            <label class="choice"><input type="radio" name="goal" value="learn" required><span>تعلم أساسيات الاستثمار والبزنس</span></label>
+            <label class="choice"><input type="radio" name="goal" value="opportunity"><span>التعرف على فرصة عمل أو مشروع جاهز للبدء</span></label>
+            <label class="choice"><input type="radio" name="goal" value="network"><span>بناء شبكة علاقات وتواصل مع رياديين</span></label>
+            <label class="choice"><input type="radio" name="goal" value="experts"><span>الاستفادة من خبرات المتحدثين والاستشارات</span></label>
           </div>
         </div>
-
         <div class="field">
-          <label>هل ترغب بدعوة صديق أو شريك عمل؟</label>
+          <label>6. هل تؤكد حضورك للمؤتمر في الموعد المحدد (10/9)؟ <span class="req">*</span></label>
           <div class="choice-grid">
-            <label class="choice"><input type="radio" name="bring_friend" value="yes" id="friendYes"><span>نعم</span></label>
-            <label class="choice"><input type="radio" name="bring_friend" value="no"><span>لا، سأحضر بمفردي</span></label>
+            <label class="choice"><input type="radio" name="confirm" value="yes" required><span>نعم، أكيد سأحضر</span></label>
+            <label class="choice"><input type="radio" name="confirm" value="maybe"><span>غير متأكد (حسب الظروف)</span></label>
           </div>
-          <div class="conditional" id="friendField">
-            <input type="text" name="friend_info" placeholder="اسم الصديق ورقم الواتساب">
+        </div>
+        <div class="field">
+          <label>7. في حال توفرت لك الفرصة المناسبة، ما هو حجم الميزانية التي تستطيع تخصيصها للبدء؟ <span class="req">*</span></label>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="budget" value="none" required><span>لا يوجد رأس مال حالياً</span></label>
+            <label class="choice"><input type="radio" name="budget" value="150_200"><span>150 - 200 دولار</span></label>
+            <label class="choice"><input type="radio" name="budget" value="250_500"><span>250 - 500 دولار</span></label>
+            <label class="choice"><input type="radio" name="budget" value="500_plus"><span>اكثر من 500 دولار</span></label>
           </div>
         </div>
       </div>
-
+      
       <div class="submit-bar">
-        <button type="submit" class="submit-btn" id="submitBtn">تأكيد التسجيل والحصول على مقعدي</button>
+        <button type="submit" class="submit-btn" id="submitBtn">تأكيد التسجيل والحصول على تذكرتي</button>
         <p class="submit-note">سيتواصل معك أحد مستشاري فريق MEGA عبر الواتساب خلال 24 ساعة</p>
         <p class="form-msg" id="formMsg">صار في خطأ، حاول مرة ثانية أو تواصل معنا مباشرة عبر واتساب.</p>
       </div>
@@ -334,27 +358,23 @@
       </div>
 
       <div style="padding: 30px 40px;">
-        <!-- Two Column Grid for Data -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
           <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
-            <!-- Decorative subtle chart in background of card -->
             <svg viewBox="0 0 200 100" style="position: absolute; bottom: 0; left: 0; width: 100%; opacity: 0.05; pointer-events: none;"><polyline fill="none" stroke="#0f172a" stroke-width="4" points="0,80 40,60 80,90 120,40 160,50 200,20"/></svg>
-            
             <h3 style="font-family: 'Cairo', sans-serif; margin:0 0 15px 0; color: #0f172a; border-bottom: 2px solid #00D2A0; padding-bottom: 10px; display: inline-block;">البيانات الشخصية</h3>
             <p style="margin: 8px 0;"><strong>الاسم:</strong> <span id="pdfName"></span></p>
-            <p style="margin: 8px 0;"><strong>المدينة:</strong> <span id="pdfCity"></span></p>
             <p style="margin: 8px 0;"><strong>الواتساب:</strong> <span id="pdfPhone" dir="ltr" style="display:inline-block;"></span></p>
-            <p style="margin: 8px 0;"><strong>الإيميل:</strong> <span id="pdfEmail" dir="ltr" style="display:inline-block;"></span></p>
+            <p style="margin: 8px 0;"><strong>الوضع المهني:</strong> <span id="pdfJobStatus"></span></p>
+            <p style="margin: 8px 0;"><strong>الخبرة:</strong> <span id="pdfExperience"></span></p>
           </div>
 
           <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; position: relative; overflow: hidden;">
             <svg viewBox="0 0 200 100" style="position: absolute; bottom: 0; left: 0; width: 100%; opacity: 0.05; pointer-events: none;"><polyline fill="none" stroke="#00D2A0" stroke-width="4" points="0,50 40,70 80,30 120,40 160,10 200,0"/></svg>
-
-            <h3 style="font-family: 'Cairo', sans-serif; margin:0 0 15px 0; color: #0f172a; border-bottom: 2px solid #00D2A0; padding-bottom: 10px; display: inline-block;">التفاصيل الفنية</h3>
-            <p style="margin: 8px 0;"><strong>الخبرة:</strong> <span id="pdfLevel"></span></p>
-            <p style="margin: 8px 0;"><strong>أكبر عقبة:</strong> <span id="pdfObstacle"></span></p>
+            <h3 style="font-family: 'Cairo', sans-serif; margin:0 0 15px 0; color: #0f172a; border-bottom: 2px solid #00D2A0; padding-bottom: 10px; display: inline-block;">التفضيلات والتحديات</h3>
             <p style="margin: 8px 0;"><strong>الاهتمامات:</strong> <span id="pdfInterest"></span></p>
-            <p style="margin: 8px 0;"><strong>الحضور:</strong> <span id="pdfConfirm"></span></p>
+            <p style="margin: 8px 0;"><strong>التحدي الأكبر:</strong> <span id="pdfChallenge"></span></p>
+            <p style="margin: 8px 0;"><strong>الاحتياج:</strong> <span id="pdfNeed"></span></p>
+            <p style="margin: 8px 0;"><strong>الميزانية:</strong> <span id="pdfBudget"></span></p>
           </div>
         </div>
 
@@ -432,37 +452,52 @@
     const fd = new FormData(form);
     
     const valueMap = {
-      'forex': 'التداول في سوق الفوركس',
-      'portfolio': 'الاستثمار طويل الأجل وبناء المحافظ',
-      'business': 'ريادة الأعمال وتأسيس المشاريع',
-      'join_team': 'التعرف على فرص الانضمام لفريق MEGA',
-      'beginner': 'مبتدئ تماماً — أبحث عن بداية صحيحة',
-      'intermediate': 'متوسط — لدي معرفة أو تجربة سابقة',
-      'advanced': 'متقدم — أبحث عن استراتيجيات أعمق',
-      'capital': 'نقص رأس المال',
-      'knowledge': 'نقص المعرفة والخبرة التطبيقية',
-      'mentor': 'عدم وجود موجّه أو مجتمع داعم',
-      'risk': 'إدارة المخاطر والخوف من الخسارة',
-      'yes': 'نعم',
-      'maybe': 'مهتم، أود معرفة التفاصيل أولاً',
-      'no': 'لا، سأحضر بمفردي'
+      'student': 'طالب / حديث تخرج',
+      'employee': 'موظف (دوام كامل / جزئي)',
+      'business': 'صاحب عمل / ريادي أعمال',
+      'job_seeker': 'باحث عن عمل',
+      'startup': 'ريادة الأعمال وتأسيس مشروع خاص',
+      'investment': 'الاستثمار وبناء مصادر دخل إضافية',
+      'money_management': 'تطوير مهارات إدارة الأموال والادخار',
+      'mega_team': 'التعرف على فرص عمل أو شراكة مع فريق MEGA',
+      'beginner': 'مبتدئ تماماً (بدي أبلش من الصفر)',
+      'theory': 'عندي معلومات نظرية بس ما بلشت تطبيق عملي',
+      'practical': 'عندي تجربة عملية وبطمح للتطوير والتوسع',
+      'capital': 'نقص رأس المال لبدء مشروع',
+      'knowledge': 'نقص المعرفة والخبرة العملية في إدارة الاموال',
+      'time': 'ضيق الوقت أو صعوبة تنظيم وقتي',
+      'mentor': 'عدم وجود موجّه (Mentor) أو مجتمع داعم',
+      'fear': 'الخوف من المخاطرة واتخاذ القرار',
+      'plan': 'خطة عمل واضحة ومجربة',
+      'skills': 'مهارات عملية جديدة (إدارة / مبيعات / تسويق)',
+      'partner': 'رأس مال أو شريك استثماري',
+      'guidance': 'توجيه ومتابعة شخصية من خبراء',
+      'learn': 'تعلم أساسيات الاستثمار والبزنس',
+      'opportunity': 'التعرف على فرصة عمل أو مشروع جاهز للبدء',
+      'network': 'بناء شبكة علاقات وتواصل مع رياديين',
+      'experts': 'الاستفادة من خبرات المتحدثين والاستشارات',
+      'none': 'لا يوجد رأس مال حالياً',
+      '150_200': '150 - 200 دولار',
+      '250_500': '250 - 500 دولار',
+      '500_plus': 'اكثر من 500 دولار',
+      'yes': 'نعم، أكيد سأحضر',
+      'maybe': 'غير متأكد (حسب الظروف)'
     };
 
     try{
-      // 1. Populate PDF template fields so we can render it
       document.getElementById('pdfName').textContent = fd.get('full_name') || 'غير محدد';
-      document.getElementById('pdfCity').textContent = fd.get('city') || 'غير محدد';
       document.getElementById('pdfPhone').textContent = fd.get('whatsapp') || 'غير محدد';
-      document.getElementById('pdfEmail').textContent = fd.get('email') || 'غير محدد';
-      document.getElementById('pdfLevel').textContent = valueMap[fd.get('level')] || 'غير محدد';
-      document.getElementById('pdfObstacle').textContent = valueMap[fd.get('obstacle')] || 'غير محدد';
-      document.getElementById('pdfConfirm').textContent = valueMap[fd.get('confirm')] || 'غير محدد';
+      document.getElementById('pdfJobStatus').textContent = valueMap[fd.get('job_status')] || 'غير محدد';
+      document.getElementById('pdfExperience').textContent = valueMap[fd.get('experience')] || 'غير محدد';
+      document.getElementById('pdfChallenge').textContent = valueMap[fd.get('challenge')] || 'غير محدد';
+      document.getElementById('pdfNeed').textContent = valueMap[fd.get('need')] || 'غير محدد';
+      document.getElementById('pdfBudget').textContent = valueMap[fd.get('budget')] || 'غير محدد';
       
       let interests = fd.getAll('interest[]');
       let arInterests = interests.map(i => valueMap[i] || i).join('، ');
       document.getElementById('pdfInterest').textContent = arInterests || 'غير محدد';
 
-      // 3. Generate PDF silently as Base64 to send to backend
+      // 3. Generate PDF silently as Base64 to send to backend      // 3. Generate PDF silently as Base64 to send to backend
       const original = document.getElementById('pdfTemplate');
       const clone = original.cloneNode(true);
       clone.style.display = 'block';
@@ -494,12 +529,14 @@
       // 4. Create JSON payload for our Netlify Backend
       const jsonPayload = {
         'الاسم الكامل': fd.get('full_name') || 'غير محدد',
-        'المدينة': fd.get('city') || 'غير محدد',
         'رقم الواتساب': fd.get('whatsapp') || 'غير محدد',
-        'البريد الإلكتروني': fd.get('email') || 'غير محدد',
+        'الوضع المهني': valueMap[fd.get('job_status')] || 'غير محدد',
         'الاهتمامات': arInterests || 'غير محدد',
-        'مستوى الخبرة': valueMap[fd.get('level')] || 'غير محدد',
-        'أكبر عقبة': valueMap[fd.get('obstacle')] || 'غير محدد',
+        'الخبرة': valueMap[fd.get('experience')] || 'غير محدد',
+        'التحدي الأكبر': valueMap[fd.get('challenge')] || 'غير محدد',
+        'الاحتياج الأكبر': valueMap[fd.get('need')] || 'غير محدد',
+        'هدف المؤتمر': valueMap[fd.get('goal')] || 'غير محدد',
+        'الميزانية': valueMap[fd.get('budget')] || 'غير محدد',
         'تأكيد الحضور': valueMap[fd.get('confirm')] || 'غير محدد',
         pdfBase64: pdfBase64
       };
